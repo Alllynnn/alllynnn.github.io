@@ -3,11 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: My Blog
+title: My Personal Blog
 subtitle: '个人博客'
-description: '我的个人博客'
+description: '分享技术与生活'
 keywords:
-author: Your Name
+  - blog
+  - hexo
+  - anzhiyu
+author: nikoioi
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -56,9 +59,6 @@ prismjs:
   tab_replace: ''
 
 # Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
   per_page: 10
@@ -104,3 +104,19 @@ deploy:
   type: git
   repo: https://github.com/nikoioi/nikoioi.github.io.git
   branch: main
+
+# Search
+search:
+  path: search.xml
+  field: post
+  content: true
+
+# Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Sitemap
+sitemap:
+  path: sitemap.xml

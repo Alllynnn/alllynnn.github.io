@@ -1,0 +1,81 @@
+# Global
+site_verification:
+
+# Menu 目录
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+
+# Code Blocks
+highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_copy: true # copy button
+highlight_lang: true # show the code language
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: false # unit: px
+code_word_wrap: false
+
+# Social Settings
+social:
+  Github: https://github.com/nikoioi || fab fa-github
+  Email: mailto:your@email.com || fas fa-envelope
+
+# Site Info
+blog_title: My Blog
+
+# Favicon
+favicon: /img/favicon.png
+
+# Avatar
+avatar:
+  img: /img/avatar.png
+  effect: false
+
+# Post meta display settings
+post_meta:
+  page:
+    date_type: created # created or updated
+    date_format: date # date/relative
+    categories: true
+    tags: true
+    label: true
+  post:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+# Post
+# Navigate between posts
+post_pagination: 1 # 1 older & newer posts / 2 older posts / false
+
+# Displays outdated notice for a post
+noticeOutdate:
+  enable: true
+  style: flat # style: simple/flat
+  limit_day: 365 # When will it be shown
+  position: top # position: top/bottom
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+
+# Bottom right button
+rightside:
+  readmode: true
+  aside: true
+
+# Math
+math:
+  enable: true
+  per_page: true
+
+# Pjax
+pjax:
+  enable: true
+  exclude:
+    - /music/
+    - /no-pjax/
+
+# Theme version
+version: 1.6.14
