@@ -1,24 +1,34 @@
 name: Update Theme
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 0' # 每周日的午夜运行
-  workflow_dispatch: # 手动触发
+    - cron: '0 0 * * *'  # 每天自动更新
 
 jobs:
-  update:
+  update-theme:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          submodules: recursive
-
-      - name: Update theme submodule
+          node-version: '16.x'
+          
+      - name: Configure git
         run: |
-          git submodule update --remote --merge
-          git config --global user.email "1032615837@qq.com"
-          git config --global user.name "nikoioi"
+          git config --global user.name "alllynnn"
+          git config --global user.email "${{ secrets.USER_EMAIL }}"
+          
+      - name: Update theme
+        run: |
+          npm install
+          npm update hexo-theme-anzhiyu
+          
+      - name: Commit and push
+        run: |
           git add .
-          git commit -m "chore: update theme submodule"
-          git push origin main
+          git commit -m "chore: update theme" || echo "No changes to commit"
+          git push

@@ -3,23 +3,26 @@ site_verification:
 
 # Menu 目录
 menu:
-  首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  首页: / || fas fa-house
+  文章 || fas fa-book:
+    归档: /archives/ || fas fa-box-archive
+    分类: /categories/ || fas fa-folder-open
+    标签: /tags/ || fas fa-tags
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # Code Blocks
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
-highlight_copy: true # copy button
-highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
-code_word_wrap: false
+highlight_theme: mac
+highlight_copy: true
+highlight_lang: true
+highlight_shrink: false
+highlight_height_limit: 200
 
 # Social Settings
 social:
-  Github: https://github.com/nikoioi || fab fa-github
-  Email: mailto:your@email.com || fas fa-envelope
+  Github: https://github.com/nikoioi || anzhiyu-icon-github
+  BiliBili: https://space.bilibili.com/ || anzhiyu-icon-bilibili
+  Email: mailto:1032615837@qq.com || fas fa-envelope
 
 # Site Info
 blog_title: My Blog
@@ -35,14 +38,14 @@ avatar:
 # Post meta display settings
 post_meta:
   page:
-    date_type: created # created or updated
-    date_format: date # date/relative
+    date_type: both
+    date_format: relative
     categories: true
     tags: true
     label: true
   post:
-    date_type: created
-    date_format: date
+    date_type: both
+    date_format: relative
     categories: true
     tags: true
     label: true
@@ -57,8 +60,8 @@ noticeOutdate:
   style: flat # style: simple/flat
   limit_day: 365 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 本文距离上次更新已过去
+  message_next: 天，内容可能已经过时。
 
 # Bottom right button
 rightside:
@@ -79,3 +82,169 @@ pjax:
 
 # Theme version
 version: 1.6.14
+
+# Nav
+nav:
+  enable: true
+  travelling: true
+  clock: true
+  menu:
+    - title: 网页
+      item:
+        - name: 博客
+          link: https://nikoioi.github.io/
+          icon: /img/favicon.png
+
+# Author Status
+author_status:
+  enable: true
+  statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
+  skills:
+    - 🤖️ 技术爱好者
+    - 🔍 分享与探索
+    - 🏃 脚踏实地行动派
+
+# Post Copyright
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Toc
+toc:
+  post: true
+  page: true
+  number: true
+  expand: false
+  style_simple: false
+
+# Related Post
+related_post:
+  enable: true
+  limit: 6
+  date_type: created
+
+# Center Console Configuration
+centerConsole:
+  enable: true
+  card_tags:
+    enable: true
+  history:
+    enable: true
+  categories:
+    enable: true
+  ccols:
+    enable: true
+  card_recent_post:
+    enable: true
+  card_categories:
+    enable: true
+  card_archives:
+    enable: true
+  card_webinfo:
+    enable: true
+
+# Footer Settings
+footer:
+  owner:
+    enable: true
+    since: 2023
+  custom_text:
+  runtime:
+    enable: true
+    launch_time: 12/08/2023 00:00:00
+    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
+    work_description: 分享技术与生活的点点滴滴
+    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
+    offduty_description: 下班了就该开开心心的玩耍~
+
+# 访问人数
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 运行时间
+runtimeshow:
+  enable: true
+  publish_date: 12/08/2023 00:00:00
+
+# PWA
+pwa:
+  enable: true
+  manifest: /manifest.json
+  theme_color: "#3b70fc"
+  mask_icon: /img/siteicon/safari-pinned-tab.svg
+  apple_touch_icon: /img/siteicon/apple-touch-icon.png
+  bookmark_icon: /img/siteicon/apple-touch-icon.png
+  favicon_32_32: /img/siteicon/favicon-32x32.png
+  favicon_16_16: /img/siteicon/favicon-16x16.png
+
+# 夜间模式
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+  start: 22
+  end: 6
+
+# 阅读模式
+readmode: true
+
+# 代码块设置
+highlight_lang: true
+
+# 评论弹幕配置
+comment_barrage_config:
+  enable: true
+  maxBarrage: 1
+  barrageTime: 8000
+
+# 评论系统
+comments:
+  # Up to 2 comments system, the first will be shown as default
+  # Choose: Valine/Waline/Twikoo/Artalk
+  use:
+    - Twikoo
+  text: true # Display the comment name next to the button
+  lazyload: true # The comment system will be load when comment element enters the browser's viewport.
+  count: true # Display comment count in post's top_img
+  card_post_count: true # Display comment count in Home Page
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId: https://your-domain.vercel.app # 将此处替换为你的 Vercel 域名
+  region:  # Vercel 环境无需填写
+  visitor: true
+  option:
+
+# Inject
+inject:
+  head:
+    - <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
+
+# 网站基本信息
+title: Allyn's Blog
+subtitle: ''
+description: '个人技术博客'
+keywords:
+author: alllynnn
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# 部署配置
+url: https://alllynnn.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# 主题设置
+theme: anzhiyu
+
+# 部署设置
+deploy:
+  type: git
+  repo: https://github.com/alllynnn/alllynnn.github.io
+  branch: main
