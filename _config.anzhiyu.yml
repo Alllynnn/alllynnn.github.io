@@ -192,9 +192,6 @@ darkmode:
 # 阅读模式
 readmode: true
 
-# 代码块设置
-highlight_lang: true
-
 # 评论弹幕配置
 comment_barrage_config:
   enable: true
