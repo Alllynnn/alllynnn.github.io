@@ -1,0 +1,27 @@
+# 保留所有文件和目录
+!*
+!*/
+
+# 忽略构建和缓存目录
+node_modules/
+.git/
+dist/
+build/
+public/
+.deploy_git/
+
+# 忽略日志文件
+*.log
+
+# 忽略系统文件
+.DS_Store
+.env
+.env.*
+
+# 忽略编辑器配置
+.idea/
+.vscode/
+
+# Hexo 特定忽略
+db.json
+.deploy*/

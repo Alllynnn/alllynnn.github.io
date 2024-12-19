@@ -20,7 +20,7 @@ highlight_height_limit: 200
 
 # Social Settings
 social:
-  Github: https://github.com/nikoioi || anzhiyu-icon-github
+  Github: https://github.com/Alllynnn || anzhiyu-icon-github
   BiliBili: https://space.bilibili.com/ || anzhiyu-icon-bilibili
   Email: mailto:1032615837@qq.com || fas fa-envelope
 
@@ -92,9 +92,9 @@ nav:
     - title: 网页
       item:
         - name: 博客
-          link: https://nikoioi.github.io/
+          link: https://alllynnn.github.io/
           icon: /img/favicon.png
-
+  
 # Author Status
 author_status:
   enable: true
