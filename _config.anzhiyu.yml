@@ -20,12 +20,12 @@ highlight_height_limit: 200
 
 # Social Settings
 social:
-  Github: https://github.com/Alllynnn || anzhiyu-icon-github
+  Github: https://github.com/alllynnn || anzhiyu-icon-github
   BiliBili: https://space.bilibili.com/ || anzhiyu-icon-bilibili
   Email: mailto:1032615837@qq.com || fas fa-envelope
 
 # Site Info
-blog_title: My Blog
+blog_title: Allyn's Blog
 
 # Favicon
 favicon: /img/favicon.png
@@ -33,7 +33,7 @@ favicon: /img/favicon.png
 # Avatar
 avatar:
   img: /img/avatar.png
-  effect: false
+  effect: true
 
 # Post meta display settings
 post_meta:
@@ -86,15 +86,20 @@ version: 1.6.14
 # Nav
 nav:
   enable: true
-  travelling: true
-  clock: true
+  travelling: false
+  clock: false
   menu:
     - title: 网页
       item:
-        - name: 博客
-          link: https://alllynnn.github.io/
-          icon: /img/favicon.png
-  
+        - name: GitHub主页
+          link: https://github.com/alllynnn
+          icon: https://avatars.githubusercontent.com/u/118941122?s=96&v=4
+    - title: 项目
+      item:
+        - name: 图床
+          link: https://dash.cloudflare.com
+          icon: /img/favicon.ico
+
 # Author Status
 author_status:
   enable: true
@@ -212,7 +217,7 @@ comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://your-domain.vercel.app # 将此处替换为你的 Vercel 域名
+  envId: https://blog.alyn.fun # 将此处替换为你的 Vercel 域名
   region:  # Vercel 环境无需填写
   visitor: true
   option:

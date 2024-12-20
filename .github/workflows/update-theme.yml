@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '20.x'
           
       - name: Configure git
         run: |
@@ -24,8 +24,9 @@ jobs:
           
       - name: Update theme
         run: |
-          npm install
-          npm update hexo-theme-anzhiyu
+          cd themes/anzhiyu
+          git pull origin main
+          cd ../..
           
       - name: Commit and push
         run: |
