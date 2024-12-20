@@ -217,7 +217,7 @@ comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://blog.alyn.fun # 将此处替换为你的 Vercel 域名
+  envId: https://twikoo.alyn.fun/ # 将此处替换为你的 Vercel 域名
   region:  # Vercel 环境无需填写
   visitor: true
   option:
