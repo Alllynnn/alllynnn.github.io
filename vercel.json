@@ -4,9 +4,15 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "buildCommand": "npm install -g hexo-cli && npm install && hexo generate",
+        "buildCommand": "npm ci && npm run build",
         "outputDirectory": "public"
       }
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
-} 
+}
