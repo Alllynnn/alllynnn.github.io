@@ -1,12 +1,12 @@
 {
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
   "git": {
     "deploymentEnabled": {
       "main": false,
       "gh-pages": true
     }
   },
-  "framework": null,
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "installCommand": null
+  "builds": []
 }
