@@ -4,5 +4,9 @@
       "main": false,
       "gh-pages": true
     }
-  }
+  },
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "installCommand": null
 }
